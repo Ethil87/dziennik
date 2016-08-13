@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+<hibernate-mapping package="pl.vxm.michta">
+  <class name="SetGetClass" table="oceny">
+  <meta attribute="class-description">This class</meta>
+    <id name="id" type="int" column="id">
+        <generator class="native"/>
+    </id>
+    
+    <property name="przedmiot" column="przedmiot" type="string"/>
+    <property name="prowadzacy" column="prowadzacy" type="string"/>
+    <property name="przewidywana" column="przewidywana" type="double"/>
+    <property name="ostateczna" column="ostateczna" type="double"/>
+    <property name="data" column="data" type="date"/>
+    <property name="semestr" column="semestr" type="int"/>
+    
+    
+  </class>
+</hibernate-mapping>
